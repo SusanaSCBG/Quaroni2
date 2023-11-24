@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;300;500&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="glider.min.css" rel="stylesheet">
+<title>Quaroni</title>
+</head>
+<body>
+	
+<header class="header">
+	<a class="logo-menu" href="#">
+      <img src="imagenes/logos/logo-quaroni.png" id="logo-menu" alt="Logo Quaroni">
+    </a>
+	<div class="nav-menu">
+	<input type="checkbox" id="check">    
+            <label for="check" class="checkbtn">
+	<i class="menu-icon"><img src="imagenes/movil/elementos/Menú Hamburguesa.svg" id="menu-icon"></i>
+	</label>
+      <ul class="menu">
+        <li><a class="text-menu" href="#">Nosotros</a></li>
+        <li><a class="text-menu" href="#">Productos</a></li>
+        <li><a class="text-menu" href="#">Centros</a></li>
+        <li><a class="text-menu" href="#">Servicio a clientes</a></li>
+		<li><a class="text-menu" href="#">FAQ</a></li>
+		<li><a class="text-menu" href="#">Contáctanos</a></li>
+		<li><a class="text-menu" href="#"><img src="iconos/Lupa.png" id="lupa"></a></li>
+      </ul>
+</div>
+	</header>
+	<div class="glider-contain-movil">
+  <div class="glider-movil">
+	  <div class="banner-box">
+		<span class="glider-h1">HD 1920 X1080 <br>60 Hz</span>
+		  	<div class="img-container-movil">
+				<div class="p-img-movil">
+					<img src="imagenes/movil/banners/Banner_01.svg" alt="disco-duro">
+					<button class="btn-conoce-mov"><a href="#">Conoce nuestros productos</a></button>
+				</div>
+		  </div>
+		</div> 
+	  	  <div class="banner-box">
+		<span class="glider-h1"> <br>60 Hz</span>
+		  	<div class="img-container-movil">
+				<div class="p-img-movil">
+					<img src="imagenes/movil/banners/Banner_01.svg" alt="disco-duro">
+					<button class="btn-conoce-mov"><a href="#">Conoce nuestros productos</a></button>
+				</div>
+		  </div>
+		</div>
+	  	  <div class="banner-box">
+		<span class="glider-h1">HD 1920 X1080 <br>60 Hz</span>
+		  	<div class="img-container-movil">
+				<div class="p-img-movil">
+					<img src="imagenes/movil/banners/Banner_01.svg" alt="disco-duro">
+					<button class="btn-conoce-mov"><a href="#">Conoce nuestros productos</a></button>
+				</div>
+		  </div>
+		</div>
+  </div>
+  <button aria-label="Previous" class="glider-prev-movil"><img src="imagenes/movil/elementos/Flecha Derecha.svg" style="width: 32px;height: 32px;"></button>
+  <button aria-label="Next" class="glider-next-movil"><img src="imagenes/movil/elementos/Flecha Izquierda.svg" style="width: 32px;height: 32px;"></button>
+<!--  <div role="tablist" class="dots"></div>-->
+</div>
+	
+	<div class="slider">
+		<div class="myslide fade">
+			<div class="txt txt1">
+				<h1 style="text-align: right;">Monitor LED </h1>
+				<p style="text-align: right;">Resolución Full<br>HD 1920 X 1080<br>60 Hz <br></p>
+			<button id="btn-conoce"><a href="#">Conoce nuestros productos</a></button>
+			<button id="btn-conoce-movil"><a href="#">Conoce más</a></button>	
+			</div>
+			<img src="banners/Banner_01.svg" style="width: auto; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt txt2">
+				<h1 style="text-align: left;">Portátil NQ100</h1>
+				<p style="text-align: left;">Gran rendimiento de batería<br>HD 1366 X 768<br></p>	
+			</div>
+			<button id="btn-conoce2"><a href="#">Conoce nuestros productos</a></button>
+			<img src="banners/Banner_02.svg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt txt2">
+				<h1>QCS-01</h1>
+				<p>Fuente de poder 500W<br>Tarjeta madre Micro ATX Mini ITX<br></p>
+			</div>
+			<button id="btn-conoce3"><a href="#">Conoce nuestros productos</a></button>
+			<img src="banners/Banner_03.svg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<!-- onclick js -->
+		<a class="prev" onclick="plusSlides(-1)"><img src="iconos/Flecha Izq.png" style="width: 2.5rem;height: 2.5rem;"></a>
+  		<a class="next" onclick="plusSlides(1)"><img src="iconos/Flecha Derecha.png" style="width: 2.5rem;height: 2.5rem;"></a>
+		
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+	</div>
+
+<div class="banner-azul-1movil">
+ <div class="table-azul">
+      <div class="calidad">
+		<a>— &nbsp; Calidad</a><br>
+		<p>Productos que brindan experiencias únicas, comodidad y flexibilidad para el usuario.</p>
+		</div>
+      <div class="tecnologia">
+		<a>— &nbsp;  Innovación</a><br>
+		<p>Tecnología inteligente a tu alcance.</p>
+		</div>
+      <div class="personalizacion">
+		 <a>— &nbsp; Perzonalización</a><br>
+		 <p>Productos que se adaptan a tus necesidades.</p>
+		</div>
+      <div class="variedad">
+		 <a>— &nbsp; Variedad</a><br>
+		 <p>Encuentra lo que necesitas con nuestra amplia variedad y disponibilidad de productos.</p>
+	 </div>
+	</div>
+	</div>
+	
+	
+<div class="banner-azul-1">
+ <table class="table-azul">
+  <tbody>
+    <tr>
+      <td>
+		<a>— &nbsp; Calidad</a><br>
+		<p>Productos que brindan experiencias únicas, comodidad y flexibilidad para el usuario.</p>
+		</td>
+      <td>
+		<a>— &nbsp;  Innovación</a><br>
+		<p>Tecnología inteligente a tu alcance.</p>
+		</td>
+      <td>
+		 <a>— &nbsp; Perzonalización</a><br>
+		 <p>Productos que se adaptan a tus necesidades.</p>
+		</td>
+      <td>
+		 <a>— &nbsp; Variedad</a><br>
+		 <p>Encuentra lo que necesitas con nuestra amplia variedad y disponibilidad de productos.</p>
+	 </td>
+    </tr>
+  </tbody>
+</table>
+	</div>
+<section class="banner-categorias">
+	<h1>Categorías</h1>
+	<div class="slider-btns">
+		<button aria-label="Previous" class="glider-prev"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></button>
+    	<button aria-label="Next" class="glider-next"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
+	</div>
+		<div class="glider-contain">
+		  <div class="glider">
+			<div class="product-box">
+				<span class="p-codigo">QWC-01</span>
+					<div class="img-container">
+						<div class="p-img">
+							<a href="#">
+								<img src="imagenes/categorias/Webcam.svg" alt="disco-duro">
+							</a>
+						</div>
+					</div>
+					<div class="p-box-text">
+						<div class="product-categoria">
+							<span class="catego-title">Webcams</span> <br>
+							<span class="catego-desc">Descripción.</span>
+						</div>
+					</div>
+					<div class="btn-categoria">
+						 <button class="btn-vermas-catego"><a href="#">Ver más</a></button>
+					</div>
+				</div>
+			  	<div class="product-box">
+				<span class="p-codigo">QDDO1</span>
+					<div class="img-container">
+						<div class="p-img">
+							<a href="#">
+								<img src="imagenes/categorias/Disco Duro.svg" alt="disco-duro">
+							</a>
+						</div>
+					</div>
+					<div class="p-box-text">
+						<div class="product-categoria">
+							<span class="catego-title">Discos duros</span> <br>
+							<span class="catego-desc">Respalda tus documentos y llévalos a cualquier parte.</span>
+						</div>
+					</div>
+					<div class="btn-categoria">
+						 <button class="btn-vermas-catego"><a href="#">Ver más</a></button>
+					</div>
+				</div>
+			  	<div class="product-box">
+				<span class="p-codigo">QPSU-03</span>
+					<div class="img-container">
+						<div class="p-img">
+							<a href="#">
+								<img src="imagenes/categorias/Fuentes de poder.svg" alt="disco-duro">
+							</a>
+						</div>
+					</div>
+					<div class="p-box-text">
+						<div class="product-categoria">
+							<span class="catego-title">Fuentes de poder</span> <br>
+							<span class="catego-desc">Descripción.</span>
+						</div>
+					</div>
+					<div class="btn-categoria">
+						 <button class="btn-vermas-catego"><a href="#">Ver más</a></button>
+					</div>
+				</div>
+			  	<div class="product-box">
+				<span class="p-codigo">QCHT-01</span>
+					<div class="img-container">
+						<div class="p-img">
+							<a href="#">
+								<img src="imagenes/categorias/Gabinete.svg" alt="disco-duro">
+							</a>
+						</div>
+					</div>
+					<div class="p-box-text">
+						<div class="product-categoria">
+							<span class="catego-title">Gabinetes</span> <br>
+							<span class="catego-desc">Dale estilo a tu Setup.</span>
+						</div>
+					</div>
+					<div class="btn-categoria">
+						 <button class="btn-vermas-catego"><a href="#">Ver más</a></button>
+					</div>
+				</div>
+			  	<div class="product-box">
+				<span class="p-codigo">QMS10A-32G</span>
+					<div class="img-container">
+						<div class="p-img">
+							<a href="#">
+								<img src="imagenes/categorias/Micro SD.svg" alt="disco-duro">
+							</a>
+						</div>
+					</div>
+					<div class="p-box-text">
+						<div class="product-categoria">
+							<span class="catego-title" style="width: 180px!important;">Unidades de Estado Sólido</span> <br>
+						</div>
+					</div>
+					<div class="btn-categoria">
+						 <button class="btn-vermas-catego"><a href="#">Ver más</a></button>
+					</div>
+				</div>
+			  	<div class="product-box">
+				<span class="p-codigo">QDD44G2666-S</span>
+					<div class="img-container">
+						<div class="p-img">
+							<a href="#">
+								<img src="imagenes/categorias/Memorias.svg" alt="disco-duro">
+							</a>
+						</div>
+					</div>
+					<div class="p-box-text">
+						<div class="product-categoria">
+							<span class="catego-title">Memoria RAM 4GB</span> <br>
+							<span class="catego-desc">Descripción.</span>
+						</div>
+					</div>
+					<div class="btn-categoria">
+						 <button class="btn-vermas-catego"><a href="#">Ver más</a></button>
+					</div>
+				</div>
+			  	<div class="product-box">
+				<span class="p-codigo">MQ19-01</span>
+					<div class="img-container">
+						<div class="p-img">
+							<a href="#">
+								<img src="imagenes/categorias/Monitores.svg" alt="disco-duro">
+							</a>
+						</div>
+					</div>
+					<div class="p-box-text">
+						<div class="product-categoria">
+							<span class="catego-title">Monitores</span> <br>
+							<span class="catego-desc">Complementa tu estación de trabajo con los mejores monitores.</span>
+						</div>
+					</div>
+					<div class="btn-categoria">
+						 <button class="btn-vermas-catego"><a href="#">Ver más</a></button>
+					</div>
+				</div>
+			  	<div class="product-box">
+				<span class="p-codigo">MAQO1R</span>
+					<div class="img-container">
+						<div class="p-img">
+							<a href="#">
+								<img src="imagenes/categorias/Mouse.svg" alt="disco-duro">
+							</a>
+						</div>
+					</div>
+					<div class="p-box-text">
+						<div class="product-categoria">
+							<span class="catego-title">Mouse</span> <br>
+							<span class="catego-desc">Diseños compactos y ergonómicos.</span>
+						</div>
+					</div>
+					<div class="btn-categoria">
+						 <button class="btn-vermas-catego"><a href="#">Ver más</a></button>
+					</div>
+				</div>
+			  	<div class="product-box">
+				<span class="p-codigo">NQ100</span>
+					<div class="img-container">
+						<div class="p-img">
+							<a href="#">
+								<img src="imagenes/categorias/Portátil.svg" alt="disco-duro">
+							</a>
+						</div>
+					</div>
+					<div class="p-box-text">
+						<div class="product-categoria">
+							<span class="catego-title">Portátiles</span> <br>
+							<span class="catego-desc">¿Necesitas rendimiento y portabilidad?  Conoce nuestros portátiles.</span>
+						</div>
+					</div>
+					<div class="btn-categoria">
+						 <button class="btn-vermas-catego"><a href="#">Ver más</a></button>
+					</div>
+				</div>
+			  	<div class="product-box">
+				<span class="p-codigo">TAQ01</span>
+					<div class="img-container">
+						<div class="p-img">
+							<a href="#">
+								<img src="imagenes/categorias/Teclados.svg" alt="disco-duro">
+							</a>
+						</div>
+					</div>
+					<div class="p-box-text">
+						<div class="product-categoria">
+							<span class="catego-title">Teclados</span> <br>
+							<span class="catego-desc">Descripción.</span>
+						</div>
+					</div>
+					<div class="btn-categoria">
+						 <button class="btn-vermas-catego"><a href="#">Ver más</a></button>
+					</div>
+				</div>
+			  	<div class="product-box">
+				<span class="p-codigo">HD-1583</span>
+					<div class="img-container">
+						<div class="p-img">
+							<a href="#">
+								<img src="imagenes/categorias/SSD.svg" alt="disco-duro">
+							</a>
+						</div>
+					</div>
+					<div class="p-box-text">
+						<div class="product-categoria">
+							<span class="catego-title" style="width: 180px!important;">SSD Unidad de Estado Sólido</span> <br>
+						</div>
+					</div>
+					<div class="btn-categoria">
+						 <button class="btn-vermas-catego"><a href="#">Ver más</a></button>
+					</div>
+				</div>  	  
+		  </div>
+		</div>
+	
+
+</section>	
+	
+	
+	
+ <div class="banner-morado-container">
+	 <div class="banner-morado-text">
+	 <h1>MONITOR LED 19.5 <br>RESOLUCIÓN HD</h1>
+	 <h2>1366 x 768 pixeles 60 Hz</h2>
+	 <button class="btn-vermas"><a href="#">Ver más</a></button>
+     </div>
+	<img id="banner-morado" alt="monitor" src="banners/Banner_04.svg">
+ </div>
+<div class="banner-susc">
+	<h2>Mantengámonos en contacto</h2>
+	<h1>Únete a nuestro boletín informativo</h1>
+	<p>Obtén acceso sobre detalles exclusivos de nuestros productos.</p>
+	<form class="suscribe" action="#" method="post" style="margin-top: 5rem;">
+      <input style="display: inline;  width:35.8rem;" type="email" id="email" name="email" placeholder="Tu email" required>
+      <button style="display: inline-flex;" type="submit"><a>Suscríbete</a></button>
+    </form>
+</div>	
+<div class="banner-iconos">
+<table class="table-iconos">
+  <tbody>
+    <tr>
+      <td style="border-bottom: none; border-top: none; border-left: none;"><img id="icon-dinero" src="iconos/Teléfono.svg"><h1>100% Seguro</h1><a>Pagos seguros.</a></td>
+      <td style="border-bottom: none; border-top: none;"><img id="icon-tel" src="iconos/Check.svg"><h1>Atención al cliente</h1><a>Comunícate con nosotros a través de nuestro correo electrónico y teléfono.</a></td>
+      <td style="border-bottom: none; border-top: none;"><img id="icon-check" src="iconos/Entrega.svg"><h1>Satisfacción total</h1><a>Comunícate con nosotros a través de nuestro correo electrónico y teléfono.</a></td>
+      <td style="border-bottom: none; border-top: none; border-right:none;"><img id="icon-envio" src="iconos/Seguro.svg"><h1>Envíos Nacionales</h1><a>Envíos Nacionales.</a></td>
+    </tr>
+  </tbody>
+</table>
+	<h1 class="text-morado">Galería</h1>
+</div>
+	
+<div id="galeria-banner">
+  <table style="width:100%; border-collapse: collapse;">
+    <tr>
+      <td colspan="6"><img src="imagenes/home/Imagen_01.svg" id="teclado-banner" alt="teclado" style="width: 100%; height: 350px;"></td>
+    </tr>
+    <tr>
+      <td colspan="6"><img src="imagenes/home/Imagen_02.svg" id="mouse-banner" alt="mouse" style="width: 100%; height: 350px;"></td>
+    </tr>
+    <tr>
+      <td colspan="3"><img src="imagenes/home/Imagen_03.svg" id="laptop-banner" alt="laptop" style="width: 100%; height: 700px;"></td>
+      <td colspan="3"><img src="imagenes/home/Imagen_04.svg" id="monitor-banner" alt="monitor" style="width: 100%; height: 700px;"></td>
+    </tr>
+  </table>
+</div>
+
+<div class="contactanos-container" style="flex: auto; display: inline-block">
+<div class="contactanos-form" style="width: 60%; display: inline-flex">
+<form action="#" method="post">
+<h1>Contáctanos</h1>
+  <label for="nombre"><h2 style="margin: 5px 0;">¿Cómo podemos ayudarte?</h2></label>
+  <input type="text" id="nombre" name="nombre" placeholder="Nombre" required style="width: 35.3125rem; height: 2.9375rem;">
+  <label for="email"></label>
+  <input type="email" id="email-contactanos" name="email" placeholder="Email" required style="width: 35.3125rem; height: 2.9375rem;">
+  <label for="mensaje"></label>
+  <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required style="width: 35.3125rem; height: 8.8125rem; color: black!important"></textarea>
+  <button class="btn-enviar" type="submit">Enviar</button>
+</form>
+</div>
+<div class="banner-telefono" style="width:40%;">
+<img src="imagenes/home/telefono-morado.svg" id="telefono-morado" alt="Imagen" style="height: 45.55rem;" />
+</div>
+</div>
+
+<footer class="footer">
+	<img src="imagenes/logos/Quaroni_Blanco.png" id="logo-blanco">
+	<div class="footer-container" >
+		<div class="footer-row">
+			<div class="footer-links">
+				<ul>
+					<li><a href="#">quaroni@gmail.com</a></li>
+					<li><a href="#">(33) 3812 1413</a></li>
+					<li><a>México</a></li>
+				</ul>
+			</div>
+			<div class="footer-links">	
+				<ul>
+					<li><a href="#">Aviso de privacidad</a></li>
+					<li><a href="#">Términos y Condiciones</a></li>
+					<li><a href="#">Póliza de Garantía</a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<p>Quaroni © 2023. Todos los derechos reservados.</p>
+</footer>	
+
+<script>
+const myslide = document.querySelectorAll('.myslide'),
+	  dot = document.querySelectorAll('.dot');
+let counter = 1;
+slidefun(counter);
+
+let timer = setInterval(autoSlide, 5000);
+function autoSlide() {
+	counter += 1;
+	slidefun(counter);
+}
+function plusSlides(n) {
+	counter += n;
+	slidefun(counter);
+	resetTimer();
+}
+function currentSlide(n) {
+	counter = n;
+	slidefun(counter);
+	resetTimer();
+}
+function resetTimer() {
+	clearInterval(timer);
+	timer = setInterval(autoSlide, 8000);
+}
+
+function slidefun(n) {
+	
+	let i;
+	for(i = 0;i<myslide.length;i++){
+		myslide[i].style.display = "none";
+	}
+	for(i = 0;i<dot.length;i++) {
+		dot[i].className = dot[i].className.replace(' active', '');
+	}
+	if(n > myslide.length){
+	   counter = 1;
+	   }
+	if(n < 1){
+	   counter = myslide.length;
+	   }
+	myslide[counter - 1].style.display = "block";
+	dot[counter - 1].className += " active";
+}	
+</script>
+<!--	GLIDER SLIDER JS-->
+	<script src="glider.min.js"></script>
+	<script>
+		new Glider(document.querySelector('.glider'), {
+		  slidesToScroll: 1,
+		  slidesToShow: 4,
+		  draggable: true,
+		  dots: '.dots',
+		  arrows: {
+			prev: '.glider-prev',
+			next: '.glider-next'
+	  },
+		responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+      }
+    },{
+  
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+	{
+      breakpoint: 521,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+	{
+  
+      breakpoint: 304,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+			{
+      // screens greater than >= 1024px
+      breakpoint: 0,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+	});
+	</script>
+	<script>
+	new Glider(document.querySelector('.glider-movil'), {
+	  slidesToShow: 1,
+	  slidesToScroll: .5,
+	  draggable: true,
+	  dots: '.dots',
+	  arrows: {
+		prev: '.glider-prev-movil',
+		next: '.glider-next-movil'
+	  }
+	});
+	</script>
+	
+	
+</body>
+</html>
