@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('reset.css');
+@import url('grid.css');
+@font-face {
+    font-family: 'ArgentumSans';
+    src: url('/fuentes/ArgentumSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+:root {
+    --fondo-claro: #F6F7FA;
+    --azul--osc: #0057B8;
+    --azul-claro: #0072CE;
+    --color-morado: #582C83;
+    --color-gris: #3B5266;
+    --color-negro: #000;
+    --fuente-principal: 'Saira', sans-serif;
+    --fuente-secundaria: 'ArgentumSans', sans-serif;
+}
+
+html, body{
+	margin:0;
+	padding: 0;
+	font-family: var(--fuente-secundaria);
+}
+
+.promo-product h1{
+	color: var(--color-morado);
+	font-family: var(--fuente-secundaria);
+    text-align: left;
+	padding: 36px 0 36px 99px;;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 28px;
+}
+.promo-product{
+	border-bottom: 1px solid var(--color-negro);
+}
