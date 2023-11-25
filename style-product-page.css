@@ -25,6 +25,22 @@ html, body{
 	font-family: var(--fuente-secundaria);
 }
 
+.container-product{
+	padding: 76px 56px;
+}
+#menu-categorias{
+	padding: 0;
+	margin: 0;
+	
+}
+#menu-categorias li a{
+	display: block;
+}
+#menu-categorias li a.active{
+	color: var(--color-morado);
+	font-weight: 700;
+	background-color:#EDEEF2;
+}
 .promo-product h1{
 	color: var(--color-morado);
 	font-family: var(--fuente-secundaria);
@@ -38,3 +54,111 @@ html, body{
 .promo-product{
 	border-bottom: 1px solid var(--color-negro);
 }
+.row-product li{
+	width: 336px;
+}
+.name-menu{
+	color: var(--azul-claro);
+	text-align:start;
+	font-family: var(--fuente-secundaria);
+	font-size: 27px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 40px; /* 148.148% */
+	letter-spacing: -0.27px;
+	margin-bottom: 26px;
+}
+.name{
+	color: var(--color-gris);
+	text-align: left;
+	font-family: var(--fuente-secundaria);
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 40px; /* 181.818% */
+	letter-spacing: -0.22px;
+	border-bottom: 1px solid var(--color-gris);
+	padding: 10px 0;
+}
+.catego-cant{
+	float: inline-end; 
+}
+@media only screen and (max-width:768px){
+	#menu{
+		display:none;
+	}
+}
+.name-catego{
+	color: var(--azul-claro);
+	text-align:start;
+	font-family: var(--fuente-secundaria);
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 40px; /* 100% */
+	letter-spacing: -0.4px;
+}
+.descripcion{
+	color: var(--color-gris);
+	text-align:start;
+	font-family: var(--fuente-secundaria);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px; /* 91.667% */
+	letter-spacing: -0.24px;
+	margin-top: 25px;
+}
+.conoce{
+	margin: 80px 0 30px 0;
+	color: var(--color-morado);
+	text-align:start;
+	font-family: var(--fuente-secundaria);
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 40px; /* 160% */
+	letter-spacing: -0.25px;
+}
+.c-codigo{
+	color: var(--color-morado);
+	text-align:start;
+	font-family: var(--fuente-secundaria);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px; /* 100% */
+	position: absolute;
+	left: 8%;
+	bottom: 34%;
+	width: 104px;
+	height: 24px;
+	display: flex;
+	justify-content: flex-start;
+	z-index: 100;
+}
+.card-desc{
+	color: var(--color-gris);
+	text-align:start;
+	font-family: var(--fuente-secundaria);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 133.333% */
+	position: absolute;
+	left: 8%;
+	bottom: 28%;
+	height: 24px;
+	display: flex;
+	justify-content: flex-start;
+	z-index: 100;
+	width: 253px;
+}
+.grid-image{
+	width: 352px;
+	height: 544px;
+	object-position: center;
+	object-fit: contain;
+}
+
+
