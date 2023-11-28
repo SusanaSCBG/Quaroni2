@@ -144,7 +144,7 @@ html, body{
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 20px; /* 133.333% */
+	line-height: 24px; /* 133.333% */
 	position: absolute;
 	left: 8%;
 	bottom: 28%;
@@ -153,12 +153,68 @@ html, body{
 	justify-content: flex-start;
 	z-index: 100;
 	width: 253px;
+	letter-spacing: .3px;
+	text-overflow: ellipsis;
+/*	white-space: nowrap;*/
+	-o-text-overflow: ellipsis;
 }
 .grid-image{
 	width: 352px;
 	height: 544px;
-	object-position: center;
+/*	object-position: center;*/
 	object-fit: contain;
 }
+.btn-vermas-catego{
+	position: absolute;
+	right: 8%;
+	bottom: 6%;
+	width: 138px;
+	height: 48px;
+	display: flex;
+	justify-content:center;
+	z-index: 100;
+	color: var(--azul-claro);
+	text-align:center;
+	font-family: var(--fuente-secundaria);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 16px; 
+	cursor: pointer;
+}
 
+.product-box-catego{
+	display: flex;
+	flex-direction: column;
+	width: 352px;
+	height: 544px;
+	padding:5px;
+	margin: 0 86px 54px 0;
+	position: relative;
+}
+.pagination{
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+}
 
+.pagination li{
+    display: inline-block;
+	width: 40px!important;
+	float: right;
+}
+
+.pagination li a{
+    padding: 10px;
+    width: 40px;
+	height: 40px;
+	color: var(--color-gris);
+	font-family: var(--fuente-secundaria);
+}
+
+.pagination li a.active{
+    color: var(--color-gris);
+	font-family: var(--fuente-secundaria);
+    border: 1px solid #3B5266;
+	border-radius: 50%
+}
