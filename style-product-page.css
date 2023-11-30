@@ -215,6 +215,4 @@ html, body{
 .pagination li a.active{
     color: var(--color-gris);
 	font-family: var(--fuente-secundaria);
-    border: 1px solid #3B5266;
-	border-radius: 50%
 }
