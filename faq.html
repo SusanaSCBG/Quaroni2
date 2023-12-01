@@ -9,6 +9,7 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 <link href="style-faq.css" rel="stylesheet" type="text/css">
 <title>Preguntas frecuentes</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 	<header class="header">
 	<a class="logo-menu" href="#">
@@ -44,21 +45,24 @@
 </div>
 	</header>
 <body>
-	
+
 	<div class="container-faq">
-	<h1>Preguntas frecuentes</h1>
+	<h1 class="title-faq">Preguntas frecuentes</h1>
 	<div class="aside-faq">
-		<div class="desplegable-faq">
-			<h1>Cursus at est venenatis in.</h1>
-			<span>Posuere amet vel egestas malesuada vel odio neque.</span>
+		<div class="desplegable-faq" style="margin-bottom: 20px;">
+			<div class="subtitle-aside">
+				<h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg> Cursus at est venenatis in.</h1></div>
+			<span class="hidden-text"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512" style="margin: 2px 12px -3px 0;"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>Posuere amet vel egestas <span class="span-faq"> malesuada vel odio neque.</span> </span>
+		</div>
+		<div class="desplegable-faq" style="margin-bottom: 20px;">
+			<div class="subtitle-aside"
+				 ><h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg> Cursus at est venenatis in.</h1></div>
+			<span class="hidden-text"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512" style="margin: 2px 12px -3px 0;"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>Posuere amet vel egestas <span class="span-faq"> malesuada vel odio neque.</span> </span>
 		</div>
 		<div class="desplegable-faq">
-			<h1>Cursus at est venenatis in.</h1>
-			<span>Posuere amet vel egestas malesuada vel odio neque.</span>
-		</div>
-		<div class="desplegable-faq">
-			<h1>Cursus at est venenatis in.</h1>
-			<span>Posuere amet vel egestas malesuada vel odio neque.</span>
+			<div class="subtitle-aside">
+				<h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg> Cursus at est venenatis in.</h1></div>
+			<span class="hidden-text"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512" style="margin: 2px 12px -3px 0;"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>Posuere amet vel egestas <span class="span-faq"> malesuada vel odio neque.</span> </span>
 		</div>
 	</div>
 	<div class="text-faq">
@@ -66,5 +70,12 @@
 			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum arcu, dolor, molestie feugiat rutrum id urna quisque purus. Sit ut non urna auctor libero, dictumst ut adipiscing. Platea non convallis vel iaculis nec odio. Nulla habitant felis laoreet pharetra scelerisque placerat scelerisque interdum..Lacus habitasse neque, scelerisque aliquet. Nec, bibendum viverra vitae, molestie cum ut. Pharetra lectus volutpat arcu ut ultrices eu sit volutpat. Pretium egestas in massa cursus ornare. Amet, non gravida rutrum luctus </span>
 	</div>
 	</div>
+	<script>
+		$(document).ready(function() {
+            $('.subtitle-aside').click(function() {
+                $(this).parent().find('.hidden-text').toggle();
+            });
+        });
+	</script>
 </body>
 </html>
