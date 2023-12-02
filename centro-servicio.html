@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;300;500&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="style-map.css" rel="stylesheet" type="text/css">
+<title>Centros de servicio</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        // Función para realizar una solicitud AJAX
+        function cargarIframe(url) {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // Actualizar el src del iframe con la URL cargada
+                    document.getElementById('miIframe').src = url;
+                }
+            };
+            xhr.open('GET', url, true);
+            xhr.send();
+        }
+
+        // Función para manejar el clic en un elemento de la lista
+        function manejarClicCiudad(ciudad) {
+            // Construir la URL de la ciudad (puedes personalizar esto según tus necesidades)
+            var url = obtenerUrlCiudad(ciudad);
+            // Llamar a la función de carga del iframe
+            cargarIframe(url);
+        }
+
+        // Función para obtener la URL de la ciudad
+        function obtenerUrlCiudad(ciudad) {
+            // Mapear nombres de ciudades a URLs (puedes personalizar esto según tus necesidades)
+            var ciudadesUrl = {
+                'Cancún': 'https://www.google.com/maps/embed?...',
+                'Chihuahua': 'https://www.google.com/maps/embed?...',
+                'Culiacán': 'https://www.google.com/maps/embed?...',
+                'CDMX Taller': 'https://www.google.com/maps/embed?...',
+                'Guadalajara': 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.1883834668806!2d103.3816423240225!3d20.661913480897198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ade034e61a03%3A0x4fa86abb1ffc9ef7!2sGrupo%20CVA!5e0!3m2!1ses!2smx!4v1701477419729!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade',
+                'Hermosillo': 'https://www.google.com/maps/embed?...',
+                'León': 'https://www.google.com/maps/embed?...'
+            };
+
+            // Devolver la URL correspondiente a la ciudad
+            return ciudadesUrl[ciudad];
+        }
+    </script>
+</head>
+	<header class="header">
+	<a class="logo-menu" href="#">
+      <img src="imagenes/logos/logo-quaroni.png" id="logo-menu" alt="Logo Quaroni">
+    </a>
+	<div class="nav-menu">
+	<input type="checkbox" id="check">    
+            <label for="check" class="checkbtn">
+	<i class="menu-icon"><img src="imagenes/movil/elementos/Menú Hamburguesa.svg" id="menu-icon"></i>
+	</label>
+      <ul class="menu">
+        <li><a class="text-menu" href="#">Nosotros</a></li>
+        <li><a class="text-menu" href="#">Productos</a></li>
+		  <ul class="submenu">
+						<li><a href="#"><i><img src="imagenes/movil/elementos/Seguro.svg" alt="Ícono de Cámaras" style="margin: 0"></i>Cámaras</a></li>
+						<li><a href="#"><i><img src="imagenes/movil/elementos/Seguro.svg" alt="Ícono de Cámaras" style=""></i>Discos duros</a></li>
+						<li><a href="#"><i><img src="imagenes/movil/elementos/Seguro.svg" alt="Ícono de Cámaras" style=""></i>Fuentes de poder</a></li>
+			  			<li><a href="#"><i><img src="imagenes/movil/elementos/Seguro.svg" alt="Ícono de Cámaras" style=""></i>Gabinetes</a></li>
+			  			<li><a href="#"><i><img src="imagenes/movil/elementos/Seguro.svg" alt="Ícono de Cámaras" style=""></i>Micro SD</a></li>
+			  			<li><a href="#"><i><img src="imagenes/movil/elementos/Seguro.svg" alt="Ícono de Cámaras" style=""></i>Memorias</a></li>
+			  			<li><a href="#"><i><img src="imagenes/movil/elementos/Seguro.svg" alt="Ícono de Cámaras" style=""></i>Monitores</a></li>
+			  			<li><a href="#"><i><img src="imagenes/movil/elementos/Seguro.svg" alt="Ícono de Cámaras" style=""></i>Mouse</a></li>
+			  			<li><a href="#"><i><img src="imagenes/movil/elementos/Seguro.svg" alt="Ícono de Cámaras" style=""></i>Portátiles</a></li>
+			  			<li><a href="#"><i><img src="imagenes/movil/elementos/Seguro.svg" alt="Ícono de Cámaras" style=""></i>Teclados</a></li>
+			  			<li><a href="#" style="text-decoration: none!important;"><i><img src="imagenes/movil/elementos/Seguro.svg" alt="Ícono de Cámaras" style=""></i>Unidades de estado sólido</a></li>
+					</ul>
+        <li><a class="text-menu" href="#">Centros</a></li>
+        <li><a class="text-menu" href="#">Servicio a clientes</a></li>
+		<li><a class="text-menu" href="#">FAQ</a></li>
+		<li><a class="text-menu" href="#">Contáctanos</a></li>
+		<li><a class="text-menu" href="#"><img src="iconos/Lupa.png" id="lupa"></a></li>
+      </ul>
+</div>
+	</header>
+<body>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+<div class="centros-container">
+	<h1 class="map-tittle">Centros de servicio<br> <span class="title-bold">autorizado de Quaroni</span></h1>
+<div class="aside-map">
+    <ul class="ciudades">
+        <li onclick="manejarClicCiudad('Cancún')">Cancún</li>
+        <li onclick="manejarClicCiudad('Chihuahua')">Chihuahua</li>
+        <li onclick="manejarClicCiudad('Culiacán')">Culiacán</li>
+        <li onclick="manejarClicCiudad('CDMX Taller')">CDMX Taller</li>
+        <li onclick="manejarClicCiudad('Guadalajara')">Guadalajara</li>
+        <li onclick="manejarClicCiudad('Hermosillo')">Hermosillo</li>
+        <li onclick="manejarClicCiudad('León')">León</li>
+    </ul>
+</div>
+
+	<div class="map-container">
+		
+		<iframe id="miIframe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+</div>
+
+</body>
+</html>
