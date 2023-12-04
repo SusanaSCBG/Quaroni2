@@ -25,7 +25,6 @@
             xhr.send();
         }
 
-        // Función para manejar el clic en un elemento de la lista
         function manejarClicCiudad(ciudad) {
             // Construir la URL de la ciudad (puedes personalizar esto según tus necesidades)
             var url = obtenerUrlCiudad(ciudad);
@@ -33,9 +32,7 @@
             cargarIframe(url);
         }
 
-        // Función para obtener la URL de la ciudad
         function obtenerUrlCiudad(ciudad) {
-            // Mapear nombres de ciudades a URLs (puedes personalizar esto según tus necesidades)
             var ciudadesUrl = {
                 'Cancún': 'https://www.google.com/maps/embed?...',
                 'Chihuahua': 'https://www.google.com/maps/embed?...',
@@ -45,8 +42,7 @@
                 'Hermosillo': 'https://www.google.com/maps/embed?...',
                 'León': 'https://www.google.com/maps/embed?...'
             };
-
-            // Devolver la URL correspondiente a la ciudad
+			
             return ciudadesUrl[ciudad];
         }
     </script>
@@ -101,12 +97,24 @@
         <li onclick="manejarClicCiudad('León')">León</li>
     </ul>
 </div>
-
-	<div class="map-container">
 		
+	<div class="map-container">
 		<iframe id="miIframe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<div class="text-map"  width="600" height="450">
+			<h1>Centro de Servicio Guadalajara</h1>
+			<h2>Domicilio</h2>
+			<span>Av. Mariano Otero #2489<br> Col. Jardines de la Victoria, C.P. 44900<br>Guadalajara, Jalisco <br>Tel/Fax:(33) 3812 1413</span>
+			<h2 style="margin-top:20px;">Teléfono:</h2>
+			<span>Tel/Fax:(33) 3812 1413</span>
+		</div>
 	</div>
 </div>
 
+<div class="texto-abajo" style="display:flex;clear: both;">
+	<div id="chica-soporte-container">
+	<img src="imagenes/Call Center.png">
+	</div>
+	<span class="text-subtitle">En caso de haber adquirido el producto en una localidad que no cuente con centros de servicio, favor de comunicarse al 01 800 GHIA (4442) para recibir asesoría correspondiente.</span>
+</div>
 </body>
 </html>
